@@ -1,24 +1,27 @@
 import Link from 'next/link';
 
-export default function Home() {
+export default function Blog() {
   return (
     <div className="container">
       <header className="header">
-        <h1>Welcome to My Website</h1>
+        <h1>Our Blog</h1>
         <nav>
+          <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/services">Services</Link>
-          <Link href="/blog">Blog</Link>
         </nav>
       </header>
       <main className="main">
-        <h2>Discover Amazing Content</h2>
-        <p>This is the home page. Explore more using the navigation links above.</p>
-        <section className="highlight">
-          <h3>Featured</h3>
-          <p>Check out our latest updates and services designed to help you succeed.</p>
-        </section>
+        <h2>Latest Articles</h2>
+        <article className="blog-post">
+          <h3>Post Title 1</h3>
+          <p>A brief summary of the blog post goes here...</p>
+        </article>
+        <article className="blog-post">
+          <h3>Post Title 2</h3>
+          <p>A brief summary of another blog post goes here...</p>
+        </article>
       </main>
       <footer className="footer">
         <p>&copy; 2025 My Website. All rights reserved.</p>
