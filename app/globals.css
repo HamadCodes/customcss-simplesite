@@ -22,6 +22,7 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Header styles */
@@ -31,15 +32,20 @@ a {
   padding: 20px;
   background-color: #333;
   color: white;
+  flex-wrap: wrap;
 }
 
 .header .logo h1 {
   font-size: 1.8rem;
+  flex: 1 1 100%;
 }
 
 .header nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .header nav ul li {
@@ -118,6 +124,10 @@ a {
   color: white;
 }
 
+.contactus-heading{
+  text-align: center;
+}
+
 /* Contact Form */
 .contact-form {
   display: flex;
@@ -155,4 +165,115 @@ a {
   padding: 20px;
   background-color: #333;
   color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .header nav ul li {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .services .service-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio .portfolio-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .services .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio .portfolio-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 90%;
+  }
+
+  .contact-form button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .header nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
 }

@@ -13,7 +13,7 @@ export default function Home() {
       <Services />
       <Portfolio />
       <section id="contact" className="contact">
-        <h2>Contact Us</h2>
+        <h2 className='contactus-heading'>Contact Us</h2>
         <ContactForm />
       </section>
       <Footer />
